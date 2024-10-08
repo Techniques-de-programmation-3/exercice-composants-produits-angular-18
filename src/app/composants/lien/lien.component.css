@@ -1,0 +1,11 @@
+:host {
+    display:block;
+    border: 2px dotted rgb(231, 231, 227);
+    margin:10px;
+    padding:10px;
+    height: 100%;
+}
+
+a {
+    color:rgb(178, 235, 235)
+}
