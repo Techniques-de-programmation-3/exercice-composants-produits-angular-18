@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-lien',
@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './lien.component.css'
 })
 export class LienComponent {
-
+  @Input() lien = "#";
 }

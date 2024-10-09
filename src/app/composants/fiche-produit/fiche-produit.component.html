@@ -1,8 +1,7 @@
-<app-image />
-<app-titre-description />
+<app-image [image]="produit.image" />
+<app-titre-description [titre]="produit.nom" [description]="produit.description" />
 
 <div class="blocDroite">
-    <app-prix />
-    <app-lien />
+    <app-prix [prix]="produit.prix"/>
+    <app-lien [lien]="produit.lien" />
 </div>
-
