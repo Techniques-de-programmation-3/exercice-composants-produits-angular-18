@@ -1,2 +1,3 @@
-<app-fiche-produit [produit]="produit1"  />
-<app-fiche-produit [produit]="produit2" />
+@for (produit of produits; track produit.nom) {
+    <app-fiche-produit [produit]="produit"  />
+}
