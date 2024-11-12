@@ -14,6 +14,6 @@ import { Produit } from '../../interfaces/produit';
 })
 export class FicheProduitComponent {
   @Input() produit : Produit = {
-    image : "", nom: "", description: "",prix: 0, lien: ""
+    image : "", nom: "", description: "",prix: 0, lien: "", qteStock:0
   }
 }

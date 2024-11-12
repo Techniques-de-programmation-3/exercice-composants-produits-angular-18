@@ -1,7 +1,13 @@
-:host  {
+.fiche-produit-container  {
+    display:block;
+    border:2px dotted rgb(110, 110, 204);
+    margin:10px;
+    padding:10px;
+}
+
+.flex-container {
     display: flex;
     flex-wrap: wrap;
-    border:2px dotted rgb(110, 110, 204);
     margin:10px;
     padding:10px;
 }
@@ -22,5 +28,25 @@ app-titre-description {
 app-image {
     max-width: 20vh;
     flex-grow: 1;
+}
+
+#fiche .aligner-droite {
+    text-align: right;
+}
+
+div span.mention {
+    display: block;
+    width:100%;
+    text-align: right;
+}
+
+div.non-disponible  {
+    background-color: #ff000023;
+    color:red;
+}
+
+div.quantite-limitee  {
+    background-color: #e5ff0043;
+    color:yellow;
 }
 

@@ -5,6 +5,7 @@ export interface Produit {
     description: string;
     prix: number;
     lien: string;
+    qteStock: number;
     /*couleur?: string;*/
 }
 

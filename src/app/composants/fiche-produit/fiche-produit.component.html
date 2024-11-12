@@ -1,7 +1,17 @@
-<app-image [image]="produit.image" />
-<app-titre-description [titre]="produit.nom" [description]="produit.description" />
+ <div class="fiche-produit-container" [class.non-disponible]="produit.qteStock <= 0" [class.quantite-limitee]="produit.qteStock >= 1 && produit.qteStock <= 5">
+    @if(produit.qteStock <= 0) {
+        <span class="mention">non disponible</span>
+    } 
+    @if(produit.qteStock >= 1 && produit.qteStock <= 5) {
+        <span class="mention">quantités limitées!</span>
+    }
+    <div class="flex-container">
+        <app-image [image]="produit.image" />
+        <app-titre-description [titre]="produit.nom" [description]="produit.description" />
 
-<div class="blocDroite">
-    <app-prix [prix]="produit.prix"/>
-    <app-lien [lien]="produit.lien" />
+        <div class="blocDroite">
+            <app-prix [prix]="produit.prix"/>
+            <app-lien [lien]="produit.lien" />    
+        </div>
+    </div> 
 </div>
