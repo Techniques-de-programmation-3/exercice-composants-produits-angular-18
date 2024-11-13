@@ -1,3 +1,3 @@
-@for (produit of produits; track produit.nom) {
+@for (produit of produits | qteMinMax : 0 : 100; track produit.nom) {
     <app-fiche-produit [produit]="produit"  />
 }

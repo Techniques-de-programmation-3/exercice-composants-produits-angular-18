@@ -4,11 +4,13 @@ import { TitreDescriptionComponent } from "../titre-description/titre-descriptio
 import { PrixComponent } from "../prix/prix.component";
 import { LienComponent } from "../lien/lien.component";
 import { Produit } from '../../interfaces/produit';
+import { PrixVentePipe } from '../../pipes/prix-vente.pipe';
+import { CurrencyPipe } from '@angular/common';
 
 @Component({
   selector: 'app-fiche-produit',
   standalone: true,
-  imports: [ImageComponent, TitreDescriptionComponent, PrixComponent, LienComponent],
+  imports: [ImageComponent, TitreDescriptionComponent, PrixComponent, LienComponent, PrixVentePipe, CurrencyPipe],
   templateUrl: './fiche-produit.component.html',
   styleUrl: './fiche-produit.component.css'
 })

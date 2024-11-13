@@ -5,6 +5,8 @@
     @if(produit.qteStock >= 1 && produit.qteStock <= 5) {
         <span class="mention">quantités limitées!</span>
     }
+
+    <b>Prix de vente {{ produit | prixVente | currency: "CAD" }}</b>
     <div class="flex-container">
         <app-image [image]="produit.image" />
         <app-titre-description [titre]="produit.nom" [description]="produit.description" />
